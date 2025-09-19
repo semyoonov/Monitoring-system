@@ -1,16 +1,45 @@
-# sibur_monitoring
 
-> Система оповещения о проблемах на производстве
-> Пользователи могут зарегестрироваться, сообщить о проблеме на сайте или в tg-боте, а затем получать оповещения о проблемах на email или в tg
+# Sibur Monitoring
 
-<details>
+**Sibur Monitoring** — система оповещения о проблемах на производстве. Позволяет пользователям регистрироваться, сообщать о проблемах через веб-интерфейс или Telegram-бота, а затем получать уведомления по электронной почте или через Telegram.
 
-<summary>Тестирование</summary>
+## 📦 Структура проекта
 
-Стрельба яндекс танком, конфиги в папке `tests`. Результаты:
-- [GET](https://overload.yandex.net/729829#tab=test_data&tags=&plot_groups=main&machines=&metrics=&slider_start=1730160110&slider_end=1730160335)
-- [POST](https://overload.yandex.net/729827#tab=test_data&tags=&plot_groups=main&machines=&metrics=&slider_start=1730159393&slider_end=1730159505)
+- **`main.py`** — основной скрипт запуска приложения.
+- **`config.py`** — конфигурационные настройки приложения.
+- **`docker-compose.yml`** — конфигурация для запуска приложения с использованием Docker.
+- **`nginx.conf`** — конфигурация для веб-сервера Nginx.
+- **`requirements.txt`** — список зависимостей Python.
+- **`sender.dockerfile`** и **`web.dockerfile`** — Dockerfile для сборки образов отправителя и веб-приложения соответственно.
+- **`tests/load_testing`** — папка с конфигурациями для нагрузочного тестирования.
 
-</details>
+## 🚀 Запуск проекта
 
+1. Клонируйте репозиторий:
 
+   ```bash
+   git clone https://github.com/semyoonov/sibur.git
+   cd sibur
+   ```
+
+2. Соберите и запустите контейнеры Docker:
+
+   ```bash
+   docker-compose up --build
+   ```
+
+3. Доступ к веб-интерфейсу будет доступен по адресу: `http://localhost:8080`.
+
+4. Для использования Telegram-бота настройте соответствующие переменные в файле `config.py`.
+
+## 🧪 Тестирование
+
+Для проведения нагрузочного тестирования используйте конфигурации из папки `tests/load_testing`. Пример команды для запуска теста:
+
+```bash
+curl -X POST -d @tests/load_testing/overload.yandex.net http://localhost:8080/test
+```
+
+## 📧 Контакты
+
+Для вопросов и предложений обращайтесь к автору проекта: [@semyoonov](https://github.com/semyoonov).
