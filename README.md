@@ -9,16 +9,16 @@
 ## 📷 Скриншоты
 
 ### Главная страница системы
-![Main](images/main.png)
+![Main](image/main.png)
 
 ### Форма для добавления задачи
-![Form](images/form.png)
+![Form](image/form.png)
 
 ### Окно подтверждения после заполнения формы
-![Success](images/success.png)
+![Success](image/success.png)
 
 ### Список добавленных задач
-![List](images/list.png)
+![List](image/list.png)
 
 ## 📦 Структура проекта
 
