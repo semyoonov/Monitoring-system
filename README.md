@@ -31,11 +31,7 @@
 
 ## ⚙️ Зависимости
 
-Для запуска проекта требуется:
-
- **Docker**   
   - Достаточно установить [Docker Desktop](https://www.docker.com/products/docker-desktop)
-
 
 ## 📦 Структура проекта
 
