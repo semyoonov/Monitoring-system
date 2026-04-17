@@ -48,8 +48,8 @@
 1. Клонируйте репозиторий:
 
    ```bash
-   git clone https://github.com/semyoonov/sibur.git
-   cd sibur
+   git clone https://github.com/semyoonov/Monitoring-system.git
+   cd Monitoring-system
    ```
 
 2. Соберите и запустите контейнеры Docker:
